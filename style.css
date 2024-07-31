@@ -391,7 +391,7 @@ h3.news-category {
     background-color: var(--bg-light);
 }
 
-.single-grid-1 img {
+.single-grid-1 .attachment-post-thumbnail {
     width: 100%;
     height: 350px;
     object-fit: cover;
