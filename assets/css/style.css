@@ -1,0 +1,403 @@
+/* 
+
+Theme Name: Farma Custom New 2023
+Text Domain: Farma Custom New 2023
+Version: 1.0
+Description: Custom Template for Farma Website
+Author: Eric Wickham
+Author URI: ericwickham.ca
+
+*/
+
+:root {
+    --font-light: #fff;
+    --font-dark: #000;
+    --bg-light: #fff;
+    --bg-dark: var(--navy);
+    --green:#638475;
+    --light-blue: #C9F0FF;
+    --navy: #022F40;
+    --navy2: #054a63;
+    --off-white: #EAFFFD;
+    --red: #93032E;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.navFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-dark);
+    color: var(--font-light);
+    padding: 0.25rem 1rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-image: linear-gradient(var(--navy) 50%, var(--navy2));
+}
+
+.title {
+    display: flex;
+}
+
+.title img {
+    max-height: 75px;
+    object-fit: contain;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--font-light);
+}
+
+ul.nav  {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+li.menu-item {
+    display: inline;
+    padding: 0 0.75rem;
+}
+
+.heroFlex {
+    display: flex;
+    background-color: var(--bg-dark);
+}
+
+.hero1 {
+    flex: 40%;
+    min-height: 400px;
+    color: var(--font-light);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero1Msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero1Msg .msg {
+    padding: 0.25rem 0;
+}
+
+.quickLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.quickLink {
+    padding: 0.75rem;
+    outline: 1px solid white;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+}
+
+.quickLink i {
+    padding-right: 0.25rem;
+}
+
+.quickLink:hover {
+    backdrop-filter: brightness(1.1);
+}
+
+.quickInfo {
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+.quickInfo div {
+    padding: 0.125rem 0;
+}
+
+.hero2 {
+    background-color:var(--light-blue); 
+    flex: 60%;
+    clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.heroImg {
+    height: 100%;
+    background-image: url('../SD220220.jpg');
+    clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0 100%);
+    background-size: cover;
+}
+
+/* EVENTS + NEWS */
+
+.events h3, .news h3, .memberLogin h3 {
+    text-align: center;
+}
+
+.eventFlex, .newsFlex {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.eventContainer {
+    max-height: 200px;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+}
+
+.newsContainer img {
+    height: 275px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.eventImg {
+    background-color:grey;
+    height: 200px;
+    width: 300px;
+}
+.newsImg {
+    background-color:grey;
+    min-height: 300px;
+}
+
+
+.eventDetails {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    align-items: center;
+}
+
+.eventDate {
+    text-align: center;
+    padding: 0.5rem 0.825rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dadada;
+    background-color: #dadada;
+}
+
+.eventMonth{
+    font-size: 0.75rem;
+}
+
+.eventDay {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.moreBtn, .loginBtn {
+    padding: 1rem;
+    border: 2px solid var(--bg-dark);
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.moreBtn:hover {
+    backdrop-filter: brightness(0.9);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.memberFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memberImg, .memberLogin {
+    flex: 1 0 auto;
+    height: 300px;
+}
+
+.memberImg {
+    background-image: url('../SD220193-2.jpg');
+}
+
+.memberLogin {
+    background-color: #D9D9D9;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memberLogin > * {
+    display: flex;
+}
+
+.footer {
+    height: 50px;
+    background-color: var(--bg-dark);
+}
+
+
+.eventDiv h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.eventDiv .tribe-common, .eventDiv .tribe-events-widget-events-list__event-title-link {
+    font-family: 'Lato';
+}
+
+.events .eventDiv h3 {
+    text-align: left;
+}
+
+.eventDiv .tribe-events-widget-events-list__events {
+    display: grid;
+    padding: 0 1rem 0.5rem 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+
+}
+.eventDiv .tribe-events-widget-events-list__event-row {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__event-row,
+.eventDiv .tribe-common--breakpoint-medium.tribe-events-widget .tribe-events-widget-events-list__event-row
+ {
+    margin-bottom: 0;
+}
+
+.eventDiv .tribe-events-widget-events-list__event-date-tag.tribe-common-g-col {
+    padding: 0 0.25rem;
+}
+.eventDiv .tribe-events-widget-events-list__event-date-tag-datetime {
+    justify-content: center;
+    background-color: #d9d9d9;
+    border-radius: 0.5rem;
+}
+
+.eventDiv .tribe-common-g-row.tribe-events-widget-events-list__event-row {
+    border: 1px solid #d9d9d9;
+    padding: 0.5rem;
+    min-height: 80px;
+}
+
+.eventDiv h2.tribe-events-widget-events-list__header-title {
+    font-weight: 600;
+    font-family: 'Lato';
+    font-size: 1.175rem!important;
+    padding: 0.5rem;
+}
+
+.eventDiv time.tribe-events-widget-events-list__event-datetime {
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    max-height:14px;
+}
+
+.eventDiv .tribe-common--breakpoint-medium.tribe-events-widget .tribe-events-widget-events-list__event-title {
+    font-size: 1rem;
+}
+
+.eventDiv .tribe-common .tribe-common-g-row {
+    gap: 0.25rem;
+}
+
+.eventDiv .tribe-events-widget-events-list__view-more.tribe-common-b1.tribe-common-b2--min-medium,
+.tribe-events-widget-events-list__view-more.tribe-common-b1.tribe-common-b2--min-medium {
+    text-align: center;
+}
+
+.eventDiv .tribe-events-widget-events-list__view-more.tribe-common-b1.tribe-common-b2--min-medium a {
+    padding: 0.25rem; 
+}
+
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__view-more-link:visited,
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__view-more-link {
+    color: #000;
+    padding: 1rem!important;
+    border: 1px solid black!important;
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__view-more-link:active, 
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__view-more-link:focus, 
+.eventDiv .tribe-events-widget .tribe-events-widget-events-list__view-more-link:hover {
+    border-color: #000;
+    background-color: #d9d9d9;
+    transition: 0.3s;
+}
+
+
+/* SINGLE PAGE */
+
+.single-entry-content {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.attachment-post-thumbnail {
+    width: 100%;
+    object-fit: cover;
+    max-height: 325px;
+}
+
+.entry-header .entry-title, .entry-header .entry-date {
+    text-align: left;
+}
+
+.miniMenu, .menu-primary-menu-1  {
+    display: none;
+}
+
+.menu-primary-menu-1 li {
+    display: none!important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .links {
+        display: none;
+    }
+
+    .miniMenu, .menu-primary-menu-1  {
+        display: flex;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .heroFlex, .memberFlex {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .memberImg {
+        height: 150px;
+        background-size: cover;
+    }
+
+    /*.links::before {
+        display: block;
+        content: "\f0c9";
+        color: white;
+        font-family: "Font Awesome 6 Free";
+    }*/
+
+
+
+}
