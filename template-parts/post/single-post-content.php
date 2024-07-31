@@ -64,7 +64,7 @@
             </div>
             <div class="unrigged-embed"></div>
             <!--Function to fetch last five Unrigged stories-->
-            <script src="http://external.unrigged.ca/js/unrigged_widget.js"></script>
+            <script src="https://external.unrigged.ca/js/unrigged_widget.js"></script>
         </div>
 </article>
 
