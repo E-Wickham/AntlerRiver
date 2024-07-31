@@ -419,7 +419,7 @@ article {
     background-color: #f7f8fd;
 }
 
-.heroGrid article:hover, .category-posts article:hover {
+.heroGrid article:hover, .category-posts article:hover, .archive-posts a:hover {
     filter: brightness(0.9);
     transition: filter 0.4s;
 }
@@ -453,6 +453,19 @@ article {
 
 .archive-posts .newsContainer {
     flex: 1 1 250px;
+}
+
+.archive-posts a  {
+    text-decoration: none;
+    color: var(--font-dark);
+}
+.archive-posts h6  {
+    margin: 0;
+}
+
+.archive-posts img {
+    height: 120px;
+    width: 100%;
 }
 
 .about {

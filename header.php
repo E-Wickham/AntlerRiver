@@ -28,7 +28,7 @@
         <div class="navFlex" >
             <div class="utils"></div>
 
-            <a href="/">
+            <a href="https://antlerrivermedia.ca/">
                 <div class="title">
                     <!--replace this with new logo-->
                     <div class="separator">

@@ -16,13 +16,13 @@ get_header();
                     ?>
                 </header>
                 <div class="archive-posts">
-                <?php
-                    //open loop
-                    while( have_posts() ) :
-                        the_post();
-                        get_template_part( 'template-parts/post/content'); 
-                    endwhile;  
-                ?>
+                    <?php
+                        //open loop
+                        while( have_posts() ) :
+                            the_post();
+                            get_template_part( 'template-parts/content-posts'); 
+                        endwhile;  
+                    ?>
                 </div>
                 <?php
                     echo paginate_links( [
