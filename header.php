@@ -3,7 +3,8 @@
  * Contains the header.
  */
 
- $bloginfo = get_bloginfo()
+ $bloginfo = get_bloginfo();
+ $categories = get_categories();
 ?>
 <!doctype html>
 <html <?php language_attributes();?>>
@@ -57,12 +58,15 @@
             </div>
         </div>  
         <div class="sub-header">
-            <div class="sub-heading">
-                <a href="#">Category Link</a>
-            </div>
-            <div class="sub-heading">
-                <a href="#">Category Link 2</a>
-            </div>
+            <?php 
+                foreach ( $categories as $category ) 
+                { ?>
+                    <div class="sub-heading">
+                        <a href="<?php echo get_category_link($category->term_id ); ?> "><?php echo $category->name;  ?> </a></li> 
+                    </div>
+                    <?php 
+                }
+            ?>
         </div>              
     </nav>
 
