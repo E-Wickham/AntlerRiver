@@ -460,6 +460,11 @@ article {
     padding: 1rem;
 }
 
+.about a {
+    color: var(--font-dark);
+    text-decoration: none;
+}
+
 .menuList, .menuList .link, .menu-button {
     display: none;
 }
