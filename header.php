@@ -40,8 +40,8 @@
 
             <div x-data="{ open: false }" class="links">
                 <button @click="open = !open" class="menu-button">
-                    <i x-show="open" class='bx bxs-x-square' x-transition></i>
-                    <i x-show="!open" class='bx bx-menu' x-transition></i>
+                    <i x-show="open" class='bx bxs-x-square'></i>
+                    <i x-show="!open" class='bx bx-menu'></i>
                 </button>
                 <div x-show="open" class="menuList" x-transition>
                     <a href="#"><div class="link">Members</div></a>
@@ -73,13 +73,8 @@
 
     <style>
 
-        .menu-button{
-            float:right;
-        }
-        .menuList-reg {
-            display: flex;
-            gap: 1rem;
-        }
+
+
         .menuList {
             display: flex;
             flex-direction: column;
@@ -93,12 +88,7 @@
             color: black;
             padding: 0.25rem;
         }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+
 
         .menutransition {
             animation: showMenu 0.5s;

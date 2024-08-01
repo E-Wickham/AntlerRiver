@@ -456,9 +456,9 @@ article {
     padding: 0 1rem;
 }
 .archive-posts {
-    display: flex;
+    display: grid;
     gap: 1rem;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .archive-posts .newsContainer {
@@ -497,10 +497,14 @@ article {
     border: none;
     color: white;
     cursor: pointer;
-    display: none;
     height: 3rem;
     width: 3rem;
     font-size: 3rem;
+}
+
+.menuList-reg {
+    display: flex;
+    gap: 1rem;
 }
 
 /* animation class */
@@ -642,6 +646,14 @@ article {
         color: var(--font-dark);
         text-decoration: none;
         
+    }
+
+    .menuList-reg{
+        gap: 0;
+    }
+
+    .menu-button:hover {
+        filter: brightness(0.8);
     }
 
 }
