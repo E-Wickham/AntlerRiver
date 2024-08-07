@@ -92,6 +92,10 @@ h1.name {
     padding: 0.5rem;
     font-size: 2rem;
 }
+
+.separator .logo {
+    max-height: 80px;
+}
 .title img {
     max-height: 75px;
     object-fit: contain;
@@ -256,6 +260,7 @@ li.menu-item {
 
 h3.news-category {
     text-align: center;
+    margin: 0;
 }
 /* EVENTS + NEWS */
 

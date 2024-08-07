@@ -31,9 +31,7 @@
             <a href="https://antlerrivermedia.ca/">
                 <div class="title">
                     <!--replace this with new logo-->
-                    <div class="separator">
-                        <i class='bx bx-water'></i>
-                    </div>                        
+                    <img class="logo" src="https://antlerrivermedia.ca/wp-content/uploads/2024/08/AntlerLogoxcf.png">
                     <h1><?php echo $bloginfo ?></h1>
                 </div>
             </a>

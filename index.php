@@ -14,7 +14,8 @@
             
         </div>
         <div class="separator">
-            <i class='bx bx-water'></i>
+                    <!--replace this with new logo-->
+                    <img class="logo" src="https://antlerrivermedia.ca/wp-content/uploads/2024/08/AntlerLogoxcf.png">
         </div>
         <div class="section-2">
             <h3 class="news-category">Focused News Category</h3>
