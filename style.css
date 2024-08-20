@@ -165,6 +165,22 @@ li.menu-item {
 
 }
 
+.entry-flex {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.entry-flex h4 {
+    margin: 0;
+    font-family: 'Roboto Serif';
+    font-weight: 500;
+}
+
+.single .single-entry-content .entry-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
 
 .ft-story h2 {
     margin: 0;

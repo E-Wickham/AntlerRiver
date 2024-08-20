@@ -3,7 +3,9 @@
  * Template part for displaying single post.
  */
 
+ $postID = get_the_ID();
 
+ $auth_url = get_field('author');
 ?>
 
 <article id="post-<?php the_ID() ?>">
@@ -17,11 +19,21 @@
                 <?php
                     the_title(' <h1 class="entry-title">', '</h1>' );
                 ?>
-                <h4 class="entry-date">
-                <?php
-                    $post_date = get_the_date( 'D F j, Y' ); echo $post_date;
-                ?>
-                </h4>
+                <div class="entry-flex">
+                    <h4 class="entry-author">
+                        <?php 
+                            foreach ($auth_url as $url) {
+                                echo $url['user_firstname'].' '.$url['user_lastname'];
+                            }
+                        ?>
+                    </h4>
+                    <h4 class="entry-date">
+                        <?php
+                            $post_date = get_the_date( 'D F j, Y' ); echo $post_date;
+                        ?>
+                    </h4>
+                </div>
+
             </header>
             <div class="single-entry-grid">
                 <div class="single-grid-1">
