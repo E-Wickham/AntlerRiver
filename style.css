@@ -419,7 +419,7 @@ h3.news-category {
 /*update oct 11*/
 .single-entry-content, .attachment-post-thumbnail{
     display: block;
-    max-width:1400px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 .attachment-post-thumbnail {
