@@ -214,6 +214,21 @@ li.menu-item {
     min-width: 700px;
 }
 
+.heroGrid .entry-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+.heroGrid .ft-story:nth-of-type(1) .entry-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-wrap: wrap;
+}
 .heroGrid .ft-story:nth-of-type(2) .entry-title,
 .heroGrid .ft-story:nth-of-type(3) .entry-title,
 .heroGrid .ft-story:nth-of-type(4) .entry-title {
