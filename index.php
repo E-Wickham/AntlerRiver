@@ -18,7 +18,7 @@
                     <img class="logo" src="https://antlerrivermedia.ca/wp-content/uploads/2024/08/AntlerLogoxcf.png">
         </div>
         <div class="section-2">
-            <h3 class="news-category">Focused News Category</h3>
+            <h3 class="news-category">Latest News</h3>
             <?php include('template-parts/partials/category-list.php');?>
         </div>
         <!--ABOUT -->
@@ -42,17 +42,17 @@
 
         // Function to handle the resize event
         function handleResize() {
-        if (window.innerWidth > 768) {
-            menuList.style.display = 'none';
-            menuListReg.style.display = 'flex';
-        } else {
-            //menuList.style.display = 'flex';
-            menuListReg.style.display = 'none';
-        }
+            if (window.innerWidth > 768) {
+                menuList.style.display = 'none';
+                menuListReg.style.display = 'flex';
+            } else {
+                //menuList.style.display = 'flex';
+                menuListReg.style.display = 'none';
+            }
         }
 
         // resize event listener
-        window.addEventListener('resize', handleResize);
+        //window.addEventListener('resize', handleResize);
 
     </script>
     <?php

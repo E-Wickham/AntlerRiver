@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">        
         <?php wp_head(); ?>
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/resize@3.x.x/dist/cdn.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -26,8 +27,6 @@
     <body <?php body_class();?> x-data>
     <nav>
         <div class="navFlex" >
-            <div class="utils"></div>
-
             <a href="https://antlerrivermedia.ca/">
                 <div class="title">
                     <!--replace this with new logo-->
@@ -36,21 +35,32 @@
                 </div>
             </a>
 
-            <div x-data="{ open: false }" class="links">
+            <div x-data="{ open: false }" class="links" x-resize.document="open = $width < 751" >
                 <button @click="open = !open" class="menu-button">
                     <i x-show="open" class='bx bxs-x-square'></i>
                     <i x-show="!open" class='bx bx-menu'></i>
                 </button>
-                <div x-show="open" class="menuList" x-transition>
-                    <a href="#"><div class="link">Members</div></a>
-                    <a href="#"><div class="link"><i class='bx bxl-facebook-circle'></i></div></a>
-                    <a href="#"><div class="link"><i class='bx bxl-instagram' ></i></div></a>
-
+                <div x-show="open" x-transition>
+                    <?php 
+                    $defaults = array(
+                        'theme_location' => 'top', 
+                        'container' => 'div', 
+                        'menu_class' => 'menuList', 
+                        'menu' => 'Main Menu'
+                        );
+                        wp_nav_menu($defaults); 
+                    ?>
                 </div>
                 <div x-show="!open" class="menuList-reg" x-transition>
-                    <a href="#"><div class="link-reg">Members</div></a>
-                    <a href="#"><div class="link-reg"><i class='bx bxl-facebook-circle'></i></div></a>
-                    <a href="#"><div class="link-reg"><i class='bx bxl-instagram' ></i></div></a>
+                    <?php 
+                    $defaults2 = array(
+                    'theme_location' => 'top', 
+                    'container' => 'div', 
+                    'menu_class' => 'menuList-reg', 
+                    'menu' => 'Main Menu'
+                    );
+                    wp_nav_menu($defaults2);
+                    ?> 
 
                 </div>
             </div>
@@ -81,13 +91,16 @@
         .menuList a, .menuList div {
             min-height: 20px;
             min-width: 200px;
-            width: 200px;
             display: block;
             color: black;
             padding: 0.25rem;
         }
-
-
+        li.page_item {
+            white-space: nowrap;
+        }
+        li.page_item:hover {
+            backdrop-filter: brightness(0.9);
+        }
         .menutransition {
             animation: showMenu 0.5s;
         }
