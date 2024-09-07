@@ -187,7 +187,6 @@ li.menu-item {
     text-overflow: ellipsis;
     /* Needed to make it work */
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .single .single-entry-content .entry-title {
