@@ -56,7 +56,7 @@
         // Adjusting the top story line clamp
         let hl1 = document.querySelectorAll(".entry-content-holder")[0]
         let topStoryHL = hl1.querySelector(".entry-title");
-        let hdtxt = (hl1.innerHTML).length
+        let hdtxt = (topStoryHL.innerHTML).length
         if(hdtxt > 68 && window.innerWidth > 1000) {
             hl1.style.height = "120px"
             hl1.style.top = "22px"
