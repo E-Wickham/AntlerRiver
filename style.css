@@ -47,6 +47,10 @@ h1.name {
     align-items: center;
 }
 
+.home-page .entry-title {
+    font-size: 1.35rem;
+}
+
 .home .home-page, .home .section-2 {
     max-width: 1100px;
     display: block;
@@ -189,9 +193,17 @@ li.menu-item {
     overflow: hidden;
 }
 
+.single .single-entry-content p {
+    line-height: 1.5rem;
+}
+
 .single .single-entry-content .entry-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+}
+
+.single-entry-content-p {
+    margin: 2rem 0;
 }
 
 .ft-story h2 {
