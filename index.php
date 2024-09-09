@@ -62,7 +62,6 @@
             hl1.style.top = "22px"
             topStoryHL.style.webkitLineClamp = 2;
         }
-
     </script>
     <?php
 
