@@ -6,6 +6,12 @@
  $postID = get_the_ID();
 
  $auth_url = get_field('author');
+ $fi = get_post($postID);
+ 
+ $fi_title = $fi->post_title;
+ $fi_caption = $fi->post_excerpt;
+
+
 ?>
 
 <article id="post-<?php the_ID() ?>">
@@ -43,8 +49,14 @@
                     the_post_thumbnail();
                 endif;
                 ?>
-
+                <div>
+                    <?php 
+                    echo $fi_caption; ?>
+                </div>
+                <div class="single-entry-content-p">
                     <?php the_content(); ?>
+
+                </div>
                 </div>
                 <div class="single-grid-2">
                     <h4>Latest News</h4>
