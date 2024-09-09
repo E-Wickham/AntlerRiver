@@ -147,7 +147,8 @@ ul.nav  {
 }
 li.menu-item {
     display: inline;
-    padding: 0 0.75rem;
+    padding: 0 0.25rem;
+    white-space: nowrap;
 }
 
 .heroGrid {
@@ -757,6 +758,7 @@ article {
 
     .menuList-reg{
         gap: 0;
+        padding-inline-start: 0;
     }
 
     .menu-button:hover {
@@ -773,6 +775,5 @@ article {
 
     .navFlex {
         padding: 0;
-
     }
 }
