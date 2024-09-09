@@ -79,6 +79,12 @@ h1.name {
     gap: 1rem;
     justify-content: center;
     padding: 0.45rem;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+
+.sub-heading {
+    text-wrap: nowrap;
 }
 
 .sub-heading a {
