@@ -206,6 +206,13 @@ li.menu-item {
     margin: 2rem 0;
 }
 
+.single-img-caption {
+    color: #939090;
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+
 .ft-story h2 {
     margin: 0;
 }

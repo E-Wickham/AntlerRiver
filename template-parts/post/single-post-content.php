@@ -49,7 +49,7 @@
                     the_post_thumbnail();
                 endif;
                 ?>
-                <div>
+                <div class="single-img-caption">
                     <?php 
                     echo $fi_caption; ?>
                 </div>
