@@ -763,4 +763,16 @@ article {
         color: var(--off-white);
     }
 
+    .title {
+        gap: 0.125rem;
+    }
+
+    .title h1 {
+        font-size: 0.85rem;
+    }
+
+    .navFlex {
+        padding: 0;
+
+    }
 }
