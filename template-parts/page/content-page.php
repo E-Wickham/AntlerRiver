@@ -8,22 +8,21 @@
 <article id="post-<?php the_ID() ?>">
     <!-- Post Content --> 
         <div class="page-content">
-            <header class="entry-header">
-                <?php
+            <div class="page-default" style="margin:auto;max-width:1100px;">
+                <?php                                 
                     the_title(' <h1 class="entry-title">', '</h1>' );
-
                     if ( has_post_thumbnail() ) :
                         the_post_thumbnail();
-                     endif;
-                ?>
-            </header>
-                <?php 
+                        endif;
+                            
                     the_content(); 
                     wp_link_pages( array(
                         'before' => '<div class="page-links">'.esc_html__( 'Pages:', 'ninestars'),
                         'after' => '</div'
                     ) );
                 ?>
+            </div>
+
         </div>
 
         <?php
