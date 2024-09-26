@@ -35,8 +35,8 @@
                 </div>
             </a>
 
-            <div x-data="{ open: false }" class="links" x-resize.document="open = $width < 751" >
-                <button @click="open = !open" class="menu-button">
+            <div x-data="{ open: false, resp:false }" class="links" x-resize.document="resp = $width < 751" >
+                <button x-show="resp" @click="open = !open" class="menu-button">
                     <i x-show="open" class='bx bxs-x-square'></i>
                     <i x-show="!open" class='bx bx-menu'></i>
                 </button>

@@ -7,7 +7,7 @@
 <div class="heroGrid" x-intersect="$el.classList.add('showing')">
                         <?php
                         // Featured query - five most recent published featured posts
-                        $fqueryArgs = array( 'posts_per_page' => 8, 'offset' => 0);
+                        $fqueryArgs = array( 'posts_per_page' => 4, 'offset' => 0);
                         $topfeatured = new WP_Query ( $fqueryArgs );
                         $firstsix_ids = array();
                         $storynum = 1;
