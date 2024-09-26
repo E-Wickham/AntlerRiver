@@ -7,7 +7,7 @@
 <div class="category-posts" x-intersect="$el.classList.add('showing')">
                         <?php
                         // Featured query - five most recent published featured posts
-                        $fqueryArgs = array( 'posts_per_page' => 5, 'offset' => 4);
+                        $fqueryArgs = array( 'posts_per_page' => 6, 'offset' => 4);
                         $topfeatured = new WP_Query ( $fqueryArgs );
                         $firstsix_ids = array();
                         $storynum = 1;

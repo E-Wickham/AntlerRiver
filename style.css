@@ -271,6 +271,7 @@ li.menu-item {
     -webkit-box-orient: vertical;  
     overflow: hidden;
     text-wrap: wrap;
+    font-size: 1.2rem;
 }
 
 .heroGrid .ft-story:nth-of-type(2) article,
@@ -356,9 +357,12 @@ li.menu-item {
     grid-template-columns: 2fr 5fr;
     height: 100%;
 }
+.section-2 .category-posts .ft-story article h2{
+    font-size: 1.2rem;
+}
 
 .section-2 .category-posts .ft-story article img {
-    height: 125px;
+    height: 100%;
 }
 
 .category-posts img {
