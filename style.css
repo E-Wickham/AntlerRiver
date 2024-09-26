@@ -839,4 +839,8 @@ article {
     .navFlex {
         padding: 0;
     }
+
+    .heroGrid .ft-story:nth-of-type(1) .entry-title {
+        -webkit-line-clamp: 3; 
+    }
 }
