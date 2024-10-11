@@ -47,6 +47,11 @@ h1.name {
     align-items: center;
 }
 
+.home.blog {
+    background-color: var(--light-blue);
+}
+
+
 .home-page .entry-title {
     font-size: 1.35rem;
 }
