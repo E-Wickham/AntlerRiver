@@ -31,11 +31,9 @@
                 <div class="entry-flex">
                     <h4 class="entry-author">
                         <?php 
-                        if($url == True) {
                             foreach ($auth_url as $url) {
                                 echo $url['user_firstname'].' '.$url['user_lastname'];
                             }
-                        }
                         ?>
                     </h4>
                     <h4 class="entry-date">
