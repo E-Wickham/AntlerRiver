@@ -64,5 +64,7 @@ get_header();
     .archive-posts a {
         flex: 1 0 300px;
         box-shadow: 2px 4px 15px -1px rgba(77,77,77,0.3);
+        background-color: #f7f8fd;
+
     }
 </style>
