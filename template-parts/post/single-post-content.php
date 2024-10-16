@@ -21,16 +21,21 @@
 
     <!-- Post Content --> 
         <div class="single-entry-content">
-            <header class="entry-header">
+            
+            <div class="single-entry-grid">
+                <div class="single-grid-1">
+                <header class="entry-header">
                 <?php
                     the_title(' <h1 class="entry-title">', '</h1>' );
                 ?>
                 <div class="entry-flex">
                     <h4 class="entry-author">
                         <?php 
+                        if($url == True) {
                             foreach ($auth_url as $url) {
                                 echo $url['user_firstname'].' '.$url['user_lastname'];
                             }
+                        }
                         ?>
                     </h4>
                     <h4 class="entry-date">
@@ -41,9 +46,6 @@
                 </div>
 
             </header>
-            <div class="single-entry-grid">
-                <div class="single-grid-1">
-
                 <?php 
                 if ( has_post_thumbnail() ) :
                     the_post_thumbnail();
@@ -51,7 +53,12 @@
                 ?>
                 <div class="single-img-caption">
                     <?php 
-                    echo $fi_caption; ?>
+                    if($fi_caption==True) {
+                        echo $fi_caption; 
+                    }
+                    else {
+                        featured_img_caption();
+                    }?>
                 </div>
                 <div class="single-entry-content-p">
                     <?php the_content(); ?>
@@ -86,9 +93,12 @@
                         ?>
                 </div>
             </div>
-            <div class="unrigged-embed"></div>
-            <!--Function to fetch last five Unrigged stories-->
-            <script src="https://external.unrigged.ca/js/unrigged_widget.js"></script>
+
         </div>
 </article>
 
+<style>
+    body {
+        background-color: #f7f8fd;
+    }
+</style>
