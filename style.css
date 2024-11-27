@@ -791,24 +791,66 @@ article {
         transition: 0.3s;
     }
     .menuList {
-        background-color: white;
         z-index: 99;
         position: absolute;
-        right: 15px;
-        transition: 0.3s top ease-in-out;
-        border: 2px solid #dadada;
-        font-size: 1.75rem;
-        top: 60px;
-        border-radius: 0.25rem;
+        right: 0;
+        transition: max-height 2s ease-in-out;
+        font-size: 1.5rem;
+        top: 75px;
+        width: 100%;
+        background-color: var(--green);
+        color: var(--font-light);
     }
+
+    .height-0 {
+        max-height: 0;
+    }
+    .grow-menu .menuList {
+        max-height: 0;
+        -webkit-animation: grow-menu 1s ease-out forwards;
+        animation: grow-menu 1s ease-out forwards;
+        overflow: hidden;
+        position: absolute;
+        z-index: 9999;
+    }
+    .shrink-menu .menuList {
+        max-height: 600px;
+        -webkit-animation: shrink-menu 1s ease-in forwards;
+        animation: shrink-menu 1s ease-in forwards;
+        overflow: hidden;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    @keyframes grow-menu {
+        from   { 
+            max-height:0;   
+        }
+        to {
+            max-height:600px;
+        }
+      }
+    @keyframes shrink-menu {
+        from   { 
+            max-height:600px;   
+        }
+        to {
+            max-height:0;
+        }
+      }
+
     .menuList li {
         padding: 0.5rem 0;
         flex: 1 auto;
         width: 100%;
         text-align: center;
     }
-    .menuList div:hover, .menuList li:hover {
+    /*.menuList div:hover, .menuList li:hover {
         background-color: #dadada;
+    }*/
+
+    .menuList li a:hover {
+        filter:brightness(1);
     }
     .menuList {
         padding-inline-start: 0;
@@ -823,9 +865,9 @@ article {
         margin: 0;
     }
     .menuList ul a{
-        color: var(--font-dark);
+        color: var(--font-light);
         text-decoration: none;
-        
+        font-size: 1rem;
     }
 
     .menuList-reg{

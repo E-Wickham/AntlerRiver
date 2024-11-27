@@ -4,6 +4,7 @@
  */
 
  $bloginfo = get_bloginfo();
+ $blogdesc = get_bloginfo('description');
  $categories = get_categories();
 ?>
 <!doctype html>
@@ -40,7 +41,7 @@
                     <i x-show="open" class='bx bxs-x-square'></i>
                     <i x-show="!open" class='bx bx-menu'></i>
                 </button>
-                <div x-show="open" x-transition>
+                <div x-show="open" :class="!open ? 'shrink-menu' : 'grow-menu'">
                     <?php 
                     $defaults = array(
                         'theme_location' => 'top', 
@@ -51,7 +52,7 @@
                         wp_nav_menu($defaults); 
                     ?>
                 </div>
-                <div x-show="!open" class="menuList-reg" x-transition>
+                <div x-show="!open" class="menuList-reg">
                     <?php 
                     $defaults2 = array(
                     'theme_location' => 'top', 
