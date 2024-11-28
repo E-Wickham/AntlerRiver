@@ -800,11 +800,22 @@ article {
         width: 100%;
         background-color: var(--green);
         color: var(--font-light);
+        margin: 0;
     }
 
     .height-0 {
         max-height: 0;
     }
+
+    .grow-menu .menuList a {
+        color: var(--font-light);
+        font-size: 1rem;
+    }
+
+    .grow-menu .menuList a:hover {
+        filter:brightness(0.9);
+    }
+    
     .grow-menu .menuList {
         max-height: 0;
         -webkit-animation: grow-menu 1s ease-out forwards;
