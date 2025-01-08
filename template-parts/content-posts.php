@@ -17,7 +17,7 @@
         if ($curryear == $postyr) {
             $poststamp = get_the_date('M j, Y');
         } else {
-            $poststamp = get_the_date('m j, Y');
+            $poststamp = get_the_date('M j, Y');
         }
 
         // finding the featured image in a very heavy-handed way
